@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Torus API</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="./assets/fontawesome/css/all.min.css">
+</head>
+<body>
+  <h1>Torus User Manager</h1>
+  <form id="userForm" class="form-grid">
+    <div class="form-group">
+      <input type="text" id="firstName" placeholder="First Name" required />
+    </div>
+    <div class="form-group">
+      <input type="text" id="lastName" placeholder="Last Name" />
+    </div>
+    <div class="form-group">
+      <input type="email" id="email" placeholder="Email" required />
+    </div>
+    <div class="form-group full-width">
+      <button type="submit">Add User</button>
+    </div>
+  </form>
+  <h2>Users</h2>
+  <table id="userTable">
+    <thead>
+      <tr>
+        <th>First Name</th>
+        <th>Last Name</th>
+        <th>Email</th>
+        <th>Edit</th>
+      </tr>
+    </thead>
+    <tbody  id="userList">
+          <!-- User rows will be dynamically added here -->
+  </tbody>
+  </table>
+  <script src="renderer.js"></script>
+</body>
+</html>
+
