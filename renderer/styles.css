@@ -52,17 +52,26 @@ table {
   /* Grid Layout for the Form */
   .form-grid {
     display: grid;
-    grid-template-columns: repeat(2, 1fr); /* Two columns */
+    grid-template-columns: repeat(6, 1fr); /* six columns */
     gap: 16px; /* Spacing between grid items */
   }
   
   .form-group {
     display: flex;
     flex-direction: column;
+    grid-column: span 3; /* Make the button span 1/2 of the grid */
+  }
+
+  .one-third-width {
+    grid-column: span 2; /* Make the button span 1/3 of the grid */
+  }
+
+  .justify-start {
+    grid-row: 3; /* Place the button on a new row */
   }
   
   .full-width {
-    grid-column: span 2; /* Make the button span across both columns */
+    grid-column: span 6; /* Make the button span across both columns */
   }
   
   /* Input Styles */
